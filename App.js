@@ -14,25 +14,33 @@ import {
   Text,
   useColorScheme,
   View,
+  Image,
 } from 'react-native';
 
 import PersonalData from "./components/PersonalData";
-const App= ()=>{
-  return(
+const App = () => {
+  return (
 
     <View>
-    <Text style={{fontSize:40,fontWeight:'bold',textAlign:'center'}}>Hello</Text>
-    <PersonalData
+      <Text style={{ marginLeft: 12, fontWeight: 'bold', textAlign: 'left' }}>
+        <Text style={{ fontSize: 30 ,color:'#f48c06'}}>Hello</Text><Text style={{ fontSize: 30 }}>, </Text>
+
+
+            
+        <Text style={{marginLeft:150,fontSize:20,color:'#00b4d8',fontStyle:'italic'}}>Ashutosh</Text>
+      </Text>
+      <PersonalData
         name="Ashutosh Pandey"
         age="21"
         mobile="+91 xxxxx0xxx"
-        photo="./Image/ankur.jpg"
+        photo='/Image/ankur.jpg'
         address="Aliganj Locknow , Uttar Pradesh"
         email="pandey@ashu.com"
         career="Junior Software Developer"
       />
-        </View>
+      {/* <Image source={require("./Image/ankur.jpg")}/> */}
+    </View>
   );
- 
+
 }
 export default App;

@@ -16,7 +16,7 @@ const PersonalData = (props) => {
   // Return the JSX code to render the component
   return (
     <View style={styles.container}>
-      <Image source={{uri:photo}} style={styles.photo} />
+      <Image source={require("../Image/ankur.jpg")} style={styles.photo} />
       <Text style={styles.name}>{name}</Text>
       <Text style={styles.info}>Age: {age}</Text>
       <Text style={styles.info}>Mobile: {mobile}</Text>
